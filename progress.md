@@ -27,8 +27,8 @@
 
 ### 尚未處理
 
-- 未提交、未建立 GitHub 遠端、未發布 Pages。
-- 尚未加入 `game-hub` 站台卡片；站台目前仍為 8 款遊戲，加入第 9 款需要同步調整站台文案、篩選數量與測試。
+- ~~未提交、未建立 GitHub 遠端、未發布 Pages。~~ 2026-11-24 已完成，見下節。
+- ~~尚未加入 `game-hub` 站台卡片。~~ 已加入 CC乐园「剧情」分类。
 
 ## 2026-11-24 · 角色姿態系統
 
@@ -47,3 +47,11 @@
 
 - `npm test`：21 項通過（新增 11 項姿態測試：24 格唯一、每個節點都有動作、裁切座標、站位、完成與重試、連續點擊必變）。
 - `npm run test:browser`：61 項通過；三個尺寸都實測「每一次點擊都改變熊的姿態或微動作」、信件與傘從場景消失、圖集載入、裁切格有效。
+
+## 2026-11-24 · 發布 GitHub Pages
+
+- 建立倉庫 https://github.com/Raingor/joke-bear-story，`main` 分支提交 `e2f8635` 推送。
+- 新增 `.github/workflows/deploy.yml`：Node 24、`npm ci --legacy-peer-deps`、`npm test`、`npm run build`，上傳 `dist` 至 Pages。
+- Pages 來源設為 GitHub Actions；工作流 https://github.com/Raingor/joke-bear-story/actions/runs/45349086409 成功。
+- 線上驗收：`https://raingor.github.io/joke-bear-story/` HTTP 200，標題「小熊與未寄出的信 · Joke Bear 的小小冒險」；姿態圖集 `characters/bear-story-poses.png` HTTP 200（1,888,065 bytes）、CSS 200。
+- CC乐园站台已加入第 9 張卡（剧情分类），線上九個目的地真實點擊跳轉全部通過。

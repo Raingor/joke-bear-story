@@ -2,6 +2,12 @@
 
 Joke Bear 劇情向互動遊戲。五章、四種結局，約 8–12 分鐘一輪；支援手機、鍵盤、自動存檔與回憶收藏。
 
+## 在線入口
+
+- 遊戲網址：**https://raingor.github.io/joke-bear-story/**
+- 原始碼：https://github.com/Raingor/joke-bear-story
+- 站台入口：https://raingor.github.io/game-hub/（CC乐园「剧情」分类）
+
 ## 玩什麼
 
 雨天早上，小熊發現一封寫給「明天的我」卻沒有郵票的信。玩家陪牠走過房間、麵包店、小橋、郵局與山丘，透過探索、選擇與三個小任務，決定最後留給明天的那句話。
@@ -16,7 +22,7 @@ Joke Bear 劇情向互動遊戲。五章、四種結局，約 8–12 分鐘一�
 ## 開發
 
 ```bash
-npm install --legacy-peer-deps
+npm ci --legacy-peer-deps
 npm run dev        # http://localhost:5182
 npm run build
 npm run preview    # http://localhost:4182
